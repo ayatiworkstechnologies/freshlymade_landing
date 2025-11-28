@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Local Font Setup */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/public/fonts/Raleway.ttf") format("truetype");
+  font-weight: "normal";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica-Roman.ttf") format("truetype");
+  font-weight: "normal";
+  font-style: normal;
+}
+
+@theme {
+  --font-secondary: "Helvetica", sans-serif;
+  --font-primary: "Raleway", sans-serif;
+}
+input {
+  text-indent: 1px;              /* nudge first glyph */
+  padding-left: 18px !important; /* extra breathing room on the left */
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 17px;
+}
+
+input::placeholder {
+  transform: translateY(2px);
+  margin-top: -10px;
+}
